@@ -4,6 +4,7 @@
   background: #28292b;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   outline: none;
 }
 
@@ -16,6 +17,10 @@
   border-radius: 10px;
   display: flex;
   justify-content: flex-start;
+}
+
+.wrapperInput img {
+  min-width: 24px;
 }
 
 .input {
@@ -31,18 +36,115 @@ input[type="text" i] {
   padding: 0;
 }
 
-.wrapperNotify {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.wrapperNotify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.selectContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 50px;
+  margin-right: 20px;
+}
+.selectBox {
+  border: none;
+  appearance: none;
+  padding: 14px 20px 14px 12px;
+  color: #939495;
+  background: #28292b;
+  outline: none;
+  cursor: pointer;
+  width: 53px;
+}
+
+.selectContainer .iconContainer {
+  height: 100%;
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.iconContainer {
+  width: 16px;
+}
+
+.notify {
+  border: none;
+  padding: 12px;
+  background: #28292b;
+  cursor: pointer;
+}
+
+.notify img {
+  min-width: 24px;
+}
 
 .profile {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 10px;
+}
+
+.userInfo {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  margin-right: 12px;
+}
+
+.userName {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.avatar {
+  position: relative;
+}
+.avatar img {
+  min-width: 40px;
+}
+
+.badgeCircle {
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #28292b;
+  bottom: 0px;
+  right: 0px;
+}
+.badge {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #67d37f;
+  bottom: 2px;
+  right: 2px;
+}
+
+@media (max-width: 370px) {
+  .wrapperNotify {
+    margin-right: 0;
+  }
+  .header {
+    padding: 5px 5px;
+  }
+  .selectContainer {
+    margin-right: 0;
+  }
 }
