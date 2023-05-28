@@ -1,9 +1,9 @@
 import CoursesProgress from "../courses-progress/CoursesProgress";
 import BoardProgress from "../board-progress/BoardProgress";
-import "./Board.module.css";
+import "./MainBoard.module.css";
 
-const Board = () => {
-  return <></>;
+const MainBoard = () => {
+  return <>MainBoar!!</>;
 };
 
-export default Board;
+export default MainBoard;

@@ -1,0 +1,59 @@
+.sidebar {
+  min-width: 237px;
+  bottom: 0;
+  top: 0;
+  background-color: #28292c;
+  border-right: 1px solid #202225;
+  min-height: 100%;
+  padding: 0 12px 12px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 76px);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  width: 100%;
+}
+
+.item {
+  margin-bottom: 8px;
+}
+
+.active {
+  color: #fff;
+  background: #7789ea;
+  border-radius: 10px;
+}
+
+.link {
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.img {
+  margin-right: 16px;
+}
+
+.line {
+  padding: 0 4px;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #333539;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}

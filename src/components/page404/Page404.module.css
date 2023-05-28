@@ -1,0 +1,8 @@
+.page {
+  color: #28292c;
+  font-size: 24px;
+  text-align: center;
+}
+.h2:hover {
+  color: rgb(25, 126, 0);
+}

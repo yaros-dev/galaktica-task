@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7789ea;
+  height: 100vh;
+}
+
+.loginBtn {
+  padding: 20px 40px;
+  color: #fff;
+  background-color: #28292c;
+  border: 1px solid #202225;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 20px;
+}
+
+.loginBtn:hover {
+  background-color: #51535acb;
+  transition: all 0.3s;
+}

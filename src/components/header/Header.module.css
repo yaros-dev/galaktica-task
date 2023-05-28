@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+  padding: 10px 24px;
+  background: #28292b;
+  display: flex;
+  justify-content: space-between;
+  outline: none;
+}
+
+.searchForm {
+  max-width: 380px;
+}
+.wrapperInput {
+  padding: 8px 16px;
+  background: #222325;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.input {
+  margin-left: 16px;
+  background-color: #222325;
+  border: none;
+  color: #939495;
+  outline: none;
+  width: 100%;
+}
+
+input[type="text" i] {
+  padding: 0;
+}
+
+.wrapperNotify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+}
