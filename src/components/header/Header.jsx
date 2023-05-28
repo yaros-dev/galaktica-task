@@ -36,7 +36,7 @@ const Header = () => {
           <div className={styles.avatar}>
             <img className={styles.avatar} src={Avatar} alt="Avatar" />
             <span className={styles.badgeCircle}></span>
-            <span className={styles.badge} data-color-badge="#67d37f"></span>
+            <span className={styles.badge}></span>
           </div>
         </div>
       </div>

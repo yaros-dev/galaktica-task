@@ -1,7 +1,66 @@
-.wrapper {
+.home {
+  padding: 32px;
+  height: calc(100% - 70px);
+  width: 100%;
+}
+
+.boardWrapper {
   display: flex;
 }
 
-.wrapperMainHeader {
+.analiticsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
+  margin-left: 24px;
+}
+
+.planetsWrapper {
+  background-image: url("../../assets/planet-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  height: 314px;
+  max-height: 100%;
+  position: relative;
+}
+
+.planets {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.palanetItem2 img {
+  width: 130px;
+}
+
+.lablePrecent {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #ffffff;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+  margin-bottom: 16px;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(50%);
+}
+
+.statsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 273px;
+  height: 96px;
+  background: #fff;
+  border-radius: 10px;
 }
