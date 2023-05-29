@@ -1,40 +1,35 @@
-.boardProgress {
-  max-width: 264px;
-  background: #28292b;
-  border-radius: 10px;
-  padding: 40px 30px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.titleName {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 100%;
-  color: #ffffff;
+.planetsWrapper {
+  background-image: url("../../assets/planet-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 16px;
+  height: 314px;
+  max-height: 100%;
+  position: relative;
+  border-radius: 10px;
 }
 
-.titleName img {
-  margin-left: 12px;
+.planets {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.palanetItem2 {
+  position: relative;
 }
 
-.subtitle {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 16px;
-  line-height: 130%;
-  margin-bottom: 28px;
+.palanetItem2 img {
+  width: 130px;
+  position: relative;
 }
 
 .levelProgress {
   background-image: url("../../assets/Planet-m.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 176px;
-  margin-bottom: 28px;
+  background-size: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,14 +38,14 @@
 
 .percent {
   position: relative;
-  width: 202px;
-  height: 202px;
+  width: 130px;
+  height: 130px;
 }
 
 .percent svg {
   position: relative;
-  width: 202px;
-  height: 202px;
+  width: 130px;
+  height: 130px;
   transform: rotate(270deg);
 }
 
@@ -61,28 +56,28 @@
   fill: transparent;
   stroke-width: 1px;
   stroke: rgba(255, 255, 255, 0.1);
-  transform: translate(1px, 1px);
+  transform: translate(8px, 8px);
 }
 
 .percent svg circle:nth-child(2) {
   stroke-width: 2px;
   stroke: #fff;
-  stroke-dasharray: 650px;
-  stroke-dashoffset: 650px;
+  stroke-dasharray: 440px;
+  stroke-dashoffset: 440px;
   animation: animateStroke 2.5s forwards;
 }
 
 @keyframes animateStroke {
   to {
-    stroke-dashoffset: calc(650px - (650px * var(--num) / 103));
+    stroke-dashoffset: calc(440px - (440px * var(--percent) / 124));
   }
 }
 
 .dot {
   position: absolute;
-  inset: 1px;
+  inset: 11px;
   z-index: 10;
-  transform: rotate(calc(3.6deg * var(--num)));
+  transform: rotate(calc(3.6deg * var(--percent)));
   animation: animateDot 2.5s forwards;
 }
 
@@ -91,7 +86,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(calc(3.6deg * var(--num)));
+    transform: rotate(calc(3.6deg * var(--percent)));
   }
 }
 
@@ -100,35 +95,37 @@
   position: absolute;
   width: 8px;
   height: 8px;
-  top: -4px;
-  transform: translate(-50%);
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 50%;
   background: #fff;
-  left: 100px;
   box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.49);
 }
 
-.levelValue {
-  text-align: center;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 100%;
-  color: #ffffff;
-  width: 56px;
+.astronaut {
   position: absolute;
-}
-.lableLevel {
-  padding: 4px 10px;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(15px);
-  border-radius: 30px;
-  font-size: 14px;
-  line-height: 100%;
-  color: #ffffff;
+  content: "";
+  z-index: 12;
+  height: 64px;
+  width: 64px;
+  top: -18px;
+  right: 18px;
+  background-image: url("../../assets/Austronaut.svg");
 }
 
-.nextLevel {
-  font-size: 16px;
+.lablePercent {
+  font-weight: 700;
+  font-size: 18px;
   line-height: 100%;
-  color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+  margin-bottom: 16px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }

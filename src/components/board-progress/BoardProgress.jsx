@@ -19,7 +19,7 @@ const BoardProgress = () => {
           <div className={styles.levelValue}>
             4<div className={styles.lableLevel}>level</div>
           </div>
-          <div className={styles.percent}>
+          <div className={styles.percent} style={{ "--num": levelPercent }}>
             <div className={styles.dot}></div>
             <svg>
               <circle cx={100} cy={100} r={"100"}></circle>

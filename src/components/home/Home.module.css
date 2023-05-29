@@ -16,43 +16,6 @@
   margin-left: 24px;
 }
 
-.planetsWrapper {
-  background-image: url("../../assets/planet-bg.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  height: 314px;
-  max-height: 100%;
-  position: relative;
-}
-
-.planets {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.palanetItem2 img {
-  width: 130px;
-}
-
-.lablePrecent {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 100%;
-  color: #ffffff;
-  padding: 12px 24px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(15px);
-  border-radius: 30px;
-  margin-bottom: 16px;
-  position: absolute;
-  bottom: 0;
-  transform: translateX(50%);
-}
-
 .statsWrapper {
   display: flex;
   justify-content: space-between;
@@ -60,7 +23,117 @@
 
 .item {
   width: 273px;
-  height: 96px;
   background: #fff;
   border-radius: 10px;
+  padding: 16px 24px;
+  background: #28292b;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+}
+
+.bar {
+  width: 66px;
+  height: 66px;
+  margin-right: 24px;
+}
+
+.levelProgress {
+  background-image: url("../../assets/Courses-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.levelProgress2 {
+  background-image: url("../../assets/Folders-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.levelProgress3 {
+  background-image: url("../../assets/Guideline.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.percent {
+  position: relative;
+  width: 66px;
+  height: 66px;
+}
+
+.percent svg {
+  position: relative;
+  width: 66px;
+  height: 66px;
+  transform: rotate(270deg);
+}
+
+.percent svg circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 1px;
+  stroke: rgba(255, 255, 255, 0.1);
+  transform: translate(1px, 1px);
+}
+
+.percent svg circle:nth-child(2) {
+  stroke-width: 2px;
+  stroke: #fff;
+  stroke-dasharray: 440px;
+  stroke-dashoffset: 440px;
+  animation: animateStroke 2.5s forwards;
+}
+
+@keyframes animateStroke {
+  to {
+    stroke-dashoffset: calc(440px - (440px * var(--percent) / var(--all)));
+  }
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.number {
+  display: flex;
+}
+
+.text {
+  margin-left: 6px;
+}
+
+.number span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #fff;
+  margin-right: 6px;
+  margin-top: -2px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
