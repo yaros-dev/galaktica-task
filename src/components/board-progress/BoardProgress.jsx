@@ -6,15 +6,15 @@ const BoardProgress = () => {
   return (
     <div className={styles.boardProgress} style={{ "--num": levelPercent }}>
       <div>
-        <div>
-          <div className={styles.titleName}>
-            Hey, Peter!
-            <img src={Hand} alt="Hand emoji" />
-          </div>
-          <div className={styles.subtitle}>
-            Here’s complex overview of your progress
-          </div>
+        <div className={styles.titleName}>
+          Hey, Peter!
+          <img src={Hand} alt="Hand emoji" />
         </div>
+        <div className={styles.subtitle}>
+          Here’s complex overview of your progress
+        </div>
+      </div>
+      <div>
         <div className={styles.levelProgress}>
           <div className={styles.levelValue}>
             4<div className={styles.lableLevel}>level</div>

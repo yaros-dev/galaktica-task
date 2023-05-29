@@ -1,0 +1,136 @@
+.additions {
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  background: #28292c;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.topInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.addBtn {
+  cursor: pointer;
+  background-image: url("../../assets/Plus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: none;
+  padding: 4px;
+  height: 32px;
+  width: 32px;
+  margin-right: 16px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.details {
+  background-image: url("../../assets/Details.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.courses {
+  padding: 4px 0 3px 31px;
+  position: relative;
+}
+
+.courses::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/Courses-additions.svg");
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 24px;
+  width: 24px;
+}
+
+.users {
+  padding: 4px 0 3px 30px;
+  position: relative;
+}
+
+.users::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/User.svg");
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 24px;
+  width: 24px;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.image {
+  flex: 1;
+  width: 100%;
+  max-height: 66px;
+  border-radius: 5px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.image > img {
+  object-fit: cover;
+  height: 66px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.imageFilter {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.7);
+}

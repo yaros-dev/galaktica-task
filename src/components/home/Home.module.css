@@ -1,11 +1,20 @@
 .home {
   padding: 32px;
-  height: calc(100% - 70px);
+
   width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .boardWrapper {
   display: flex;
+  margin-bottom: 32px;
+}
+
+.addWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .analiticsWrapper {
@@ -16,124 +25,57 @@
   margin-left: 24px;
 }
 
-.statsWrapper {
-  display: flex;
-  justify-content: space-between;
-}
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
 
-.item {
-  width: 273px;
-  background: #fff;
-  border-radius: 10px;
-  padding: 16px 24px;
-  background: #28292b;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: rgba(255, 255, 255, 0.5);
-  display: flex;
-}
-
-.bar {
-  width: 66px;
-  height: 66px;
-  margin-right: 24px;
-}
-
-.levelProgress {
-  background-image: url("../../assets/Courses-white.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.levelProgress2 {
-  background-image: url("../../assets/Folders-white.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.levelProgress3 {
-  background-image: url("../../assets/Guideline.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.percent {
-  position: relative;
-  width: 66px;
-  height: 66px;
-}
-
-.percent svg {
-  position: relative;
-  width: 66px;
-  height: 66px;
-  transform: rotate(270deg);
-}
-
-.percent svg circle {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  fill: transparent;
-  stroke-width: 1px;
-  stroke: rgba(255, 255, 255, 0.1);
-  transform: translate(1px, 1px);
-}
-
-.percent svg circle:nth-child(2) {
-  stroke-width: 2px;
-  stroke: #fff;
-  stroke-dasharray: 440px;
-  stroke-dashoffset: 440px;
-  animation: animateStroke 2.5s forwards;
-}
-
-@keyframes animateStroke {
   to {
-    stroke-dashoffset: calc(440px - (440px * var(--percent) / var(--all)));
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 
-.stat {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.number {
-  display: flex;
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
-.text {
-  margin-left: 6px;
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
 }
 
-.number span {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 23px;
-  color: #fff;
-  margin-right: 6px;
-  margin-top: -2px;
+.animatedFadeInUp {
+  opacity: 1;
+  backface-visibility: hidden;
 }
 
-.subtitle {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+.fadeInUp {
+  opacity: 1;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  backface-visibility: hidden;
+}
+
+@media (max-width: 1202px) {
+  .home {
+    padding: 18px;
+  }
+  .boardWrapper {
+    display: block;
+  }
+
+  .analiticsWrapper {
+    margin-top: 16px;
+    margin-left: 0;
+  }
 }

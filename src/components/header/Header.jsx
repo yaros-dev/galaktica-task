@@ -1,17 +1,12 @@
-import SearchIco from "../../assets/Search.svg";
 import Notification from "../../assets/Notification.svg";
 import ArrowDown from "../../assets/ArrowDown.svg";
 import Avatar from "../../assets/Avatar.png";
+import Search from "../search/Search";
 import styles from "./Header.module.css";
 const Header = () => {
   return (
     <div className={styles.header}>
-      <form className={styles.searchForm}>
-        <div className={styles.wrapperInput}>
-          <img className={styles.img} src={SearchIco} alt="Search" />
-          <input type="text" className={styles.input} placeholder="Search..." />
-        </div>
-      </form>
+      <Search />
       <div className={styles.wrapper}>
         <div className={styles.wrapperNotify}>
           <div className={styles.selectContainer}>

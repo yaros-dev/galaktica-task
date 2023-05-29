@@ -61,3 +61,13 @@ body {
   color: #939495;
   font-family: Roboto, sans-serif;
 }
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.26);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 1px hsla(0, 0%, 100%, 0.5);
+}

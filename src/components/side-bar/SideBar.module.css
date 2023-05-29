@@ -6,13 +6,18 @@
   border-right: 1px solid #202225;
   min-height: 237px;
   padding: 0 12px 12px;
+  position: static;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100vh - 76px);
+  height: calc(100vh - 88px);
+}
+
+.menu:last-child {
+  margin-bottom: 0;
 }
 
 .list {

@@ -11,7 +11,7 @@ import styles from "./SideBar.module.css";
 const SideBar = () => {
   const isActiveButton = ({ isActive }) => {
     return {
-      color: isActive ? "#fff" : "",
+      color: isActive ? "#ffffff" : "",
       background: isActive ? "#7789ea" : "",
     };
   };

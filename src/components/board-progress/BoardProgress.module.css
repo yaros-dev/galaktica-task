@@ -132,3 +132,12 @@
   line-height: 100%;
   color: rgba(255, 255, 255, 0.3);
 }
+
+@media (max-width: 1202px) {
+  .boardProgress {
+    max-width: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
